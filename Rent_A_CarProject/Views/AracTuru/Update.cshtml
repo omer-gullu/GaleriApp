@@ -1,0 +1,23 @@
+﻿@model GaleriApp.Models.AracTuru
+
+<form method="post">
+    <div class="row pt-3 pb-4">
+
+        <div>
+            <h2 style="color:burlywood">Araç Türü Güncelle</h2>
+        </div>
+
+    </div>
+
+    <div>
+        <label asp-for="KasaTipi" class="p-0">Kasa Tipi</label>
+        <input asp-for="KasaTipi" class="form-control" />
+        <span asp-validation-for="KasaTipi" class="text-danger"></span>
+    </div>
+    <div class="row pt-3 pb-2">
+        <div style="color:aliceblue">
+            <button type="submit" class="btn btn-lg btn-warning">Araç Türü Güncelle</button>
+            <a asp-controller="AracTuru" asp-action="Index" class="btn btn-lg btn-secondary">Araç Türlerine Dön</a>
+        </div>                       
+    </div>
+</form>
